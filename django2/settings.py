@@ -15,7 +15,7 @@ import dj_database_url
 from psycopg2.errorcodes import DATABASE_DROPPED
 
 #Usando PostgreSQL com Render
-DATABASE = {
+DATABASES = {
     'default' : dj_database_url.config()
 }
 
@@ -33,7 +33,7 @@ SECRET_KEY = 'django-insecure-k1n)#om%$mc579am)6k&($7m@p7nrb6r)*25#vtdfjr$(0#za$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['django-chevy-2.onrender.com', 'localhost']
 
 
 # Application definition
