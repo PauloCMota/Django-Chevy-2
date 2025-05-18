@@ -3,7 +3,7 @@ services:
     name: django2-app
     env: python
     buildCommand: "pip install -r requirements.txt"
-    startCommand: gunicorn django2.wsgi
+    startCommand: gunicorn django2.wsgi:application --log-file -
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: django2.settings
@@ -11,3 +11,4 @@ services:
         value: 'django-insecure-k1n)#om%$mc579am)6k&($7m@p7nrb6r)*25#vtdfjr$(0#za$'
       - key: DEBUG
         value: "False"
+
