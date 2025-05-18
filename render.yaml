@@ -3,7 +3,7 @@ services:
     name: django2-app
     env: python
     buildCommand: "pip install -r django2/requirements.txt"
-    startCommand: "gunicorn django2.wsgi:application"
+    startCommand: gunicorn django2.wsgi:application
     envVars:
       - key: DJANGO_SETTINGS_MODULE
         value: django2.settings
