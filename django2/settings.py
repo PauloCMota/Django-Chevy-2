@@ -16,8 +16,9 @@ from psycopg2.errorcodes import DATABASE_DROPPED
 
 #Usando PostgreSQL com Render
 DATABASES = {
-    'default' : dj_database_url.config(default=os.environ.get('postgresql://django2_48az_user:mLoAhbxVZJjx8TW2SmGlpV7Bx1sq7VLn@dpg-d0l0lk1r0fns7391ehqg-a/django2_48az'))
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
+
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
