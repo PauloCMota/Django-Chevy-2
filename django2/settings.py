@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-k1n)#om%$mc579am)6k&($7m@p7nrb6r)*25#vtdfjr$(0#za$
 DEBUG = False
 
 ALLOWED_HOSTS = ['django-chevy-2-1.onrender.com', 'localhost', '127.0.0.1']
-
+#ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -86,7 +86,7 @@ WSGI_APPLICATION = 'django2.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -97,7 +97,7 @@ DATABASES = {
         'PORT': '3306',
     }
 }
-"""
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
