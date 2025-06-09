@@ -32,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-k1n)#om%$mc579am)6k&($7m@p7nrb6r)*25#vtdfjr$(0#za$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['django-chevy-2-1.onrender.com', 'localhost', '127.0.0.1']
 #ALLOWED_HOSTS = ['*']
